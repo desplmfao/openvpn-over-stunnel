@@ -15,6 +15,5 @@ echo "cert = /etc/stunnel/stunnel.pem" | sudo tee -a /etc/stunnel/stunnel.conf
 
 sudo sed -i -e 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 ufw allow 443/tcp
-sudo cp /etc/stunnel/stunnel.pem ~
 
 sudo service stunnel4 restart
