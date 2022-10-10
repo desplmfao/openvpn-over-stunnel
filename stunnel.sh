@@ -17,3 +17,5 @@ sudo sed -i -e 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 ufw allow 443/tcp
 
 sudo service stunnel4 restart
+
+echo download /etc/stunnel/stunnel.conf from the server for your client
